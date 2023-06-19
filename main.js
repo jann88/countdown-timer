@@ -22,10 +22,14 @@ function countDown() {
 
   //   console.log(dys, hrs, mins, secs);
 
-  days.innerHTML = dys;
-  hours.innerHTML = hrs;
-  minutes.innerHTML = mins;
-  seconds.innerHTML = secs;
+  days.innerHTML = formatTime(dys);
+  hours.innerHTML = formatTime(hrs);
+  minutes.innerHTML = formatTime(mins);
+  seconds.innerHTML = formatTime(secs);
+}
+
+function formatTime() {
+  return time < 10 ? `${time}` : time;
 }
 
 // initial call

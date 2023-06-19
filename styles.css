@@ -46,6 +46,7 @@ h1 {
 
 @media (max-width: 600px){
     .countdown__container{
+        justify-content: center;
         text-align: center;
         margin-inline: 2rem;
         font-size: 1.5rem;
