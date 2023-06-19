@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img, svg {
+    width: 100%;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    align-items: start;
+    min-height: 100vh;
+    background-image: url('image/snow.jpeg');
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+.countdown__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
