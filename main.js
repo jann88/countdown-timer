@@ -14,12 +14,18 @@ function countDown() {
   // console.log(newYearDate - currentDate);
 
   const totalSeconds = (newYearDate - currentDate) / 1000;
-  const dys = Math.floor(totalSeconds / 3600) / 24;
+
+  const dys = Math.floor(totalSeconds / 3600 / 24);
   const hrs = Math.floor(totalSeconds / 3600) % 24;
   const mins = Math.floor(totalSeconds / 60) % 60;
   const secs = Math.floor(totalSeconds) % 60;
 
   //   console.log(dys, hrs, mins, secs);
+
+  days.innerHTML = dys;
+  hours.innerHTML = hrs;
+  minutes.innerHTML = mins;
+  seconds.innerHTML = secs;
 }
 
 // initial call
